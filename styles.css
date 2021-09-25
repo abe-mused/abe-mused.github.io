@@ -14,7 +14,7 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
-.quiz-container{
+.container{
     background-color: #fff;
     width: 600px;
     max-width: 50%;
@@ -23,40 +23,20 @@ body{
     overflow: hidden;
     /* text-align: center; */
 }
-#quiz-header{
+#header{
     padding: 4rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-#quiz-header ul{
-    list-style-type: none;
-    padding: 0;
-    margin-top: 2rem;
+#header-text{
+    margin-left: 50%;
+    transform: translate(-50%, 0);
 }
-#quiz-header ul li {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+table {
+    display: flex;
+    justify-content: space-evenly;
 }
-#quiz-header ul li label{
-    cursor: pointer;
-}
-#submit-button, #reload-button{
-    background-color: #e74c3c;
-    display: block;
-    width: 100%;
+th, td{
+    text-align: left;
     padding: 1rem;
-    color: white;
-    cursor: pointer;
-    font-family: inherit;
-    border: none;
-    font-size: 1.5rem;
-}
-#reload-button:hover, #submit-button:hover{
-    background-color: #be3a2b;
-}
-#reload-button:active, #submit-button:active{
-    background-color: #b33628;
-}
-#question{
-    margin: 0rem;
 }
