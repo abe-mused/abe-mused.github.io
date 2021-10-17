@@ -16,8 +16,8 @@ body{
 }
 .container{
     background-color: #fff;
-    width: 600px;
-    max-width: 50%;
+    width: 70%;
+    max-width: 1000px;
     border-radius: 10px;
     box-shadow:0 0 20px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -27,16 +27,56 @@ body{
     padding: 4rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #header-text{
-    margin-left: 50%;
-    transform: translate(-50%, 0);
+    font-size: 3rem;
 }
+#header-text:hover{
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% { color: #295B94; }
+    20% { color: #da5203; }
+    40% { color: #03DA63; }
+    60% { color: #ABD2FD; }
+    80% { color: #31570f; }
+    100% { color: #cf48bd; }
+}
+
 table {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-start;
 }
-th, td{
+td{
+    transition: all .2s ease-in-out; 
+    width: 100%;
     text-align: left;
     padding: 1rem;
+    display: flex;
+}
+td:hover{
+    transform: scale(1.1,1.1);
+    border-radius: 20px;
+    box-shadow:0 0 20px 5px rgba(0, 0, 0, 0.3);
+
+}
+td img{
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.discription{
+    padding: 1rem;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px dotted black;
+}
+.bio{
+    padding-top: 1rem;
+    font-size: 1rem;
 }
